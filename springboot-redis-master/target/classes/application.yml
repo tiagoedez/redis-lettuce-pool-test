@@ -1,0 +1,18 @@
+spring:
+  redis:
+    host: localhost
+    database: 1
+    password:
+    port: 6379
+    client-name: redis-app-test
+    timeout: 5000
+    lettuce:
+      shutdown-timeout: 30000
+      pool:
+        # Connection pool maximum connections (negative for no limit) default 8
+        max-active: 100
+        # Maximum free connections in connection pool default 8
+        max-idle: 100
+        # Minimum free connections in connection pool default 0
+        min-idle: 50
+        max-wait: 1
